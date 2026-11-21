@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Space Shooter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-wrapper">
+        <div class="hud">
+            <div class="score-box">SCORE: <span id="score">0</span></div>
+            <div class="high-score-box">BEST: <span id="highScore">0</span></div>
+        </div>
+
+        <canvas id="gameCanvas" width="480" height="640"></canvas>
+
+        <!-- Start Screen -->
+        <div id="startScreen" class="overlay">
+            <h1 class="glow-text">CYBER<br>DEFENDER</h1>
+            <p>Steer: <span>MOUSE / TOUCH</span></p>
+            <p>Lasers: <span>AUTO-FIRE</span></p>
+            <p class="powerup-hint">Catch <span>[T] Triple Shot</span> & <span>[S] Shield</span></p>
+            <button id="startBtn" class="neon-btn">LAUNCH MISSION</button>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="gameOverScreen" class="overlay hidden">
+            <h1 class="danger-text">SHIP DESTROYED</h1>
+            <p class="final-stat">FINAL SCORE: <span id="finalScore">0</span></p>
+            <button id="restartBtn" class="neon-btn">PLAY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
